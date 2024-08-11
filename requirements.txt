@@ -1,0 +1,9 @@
+ipython
+textblob
+wikipedia
+nltk
+fire
+
+pytest-cov
+pylint
+black
