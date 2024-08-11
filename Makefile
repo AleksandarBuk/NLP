@@ -4,6 +4,7 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 	python -m textblob.download_corpora
+	python -c "import nltk; nltk.download('punkt')"
 
 test:
 	python -m pytest --cov=. --cov-report=xml
