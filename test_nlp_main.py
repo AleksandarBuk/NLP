@@ -1,4 +1,5 @@
-from nlp_logic.nlp_main import search_wikipedia, summarize_wikipedia, get_text_blob, get_phrases
+from nlp_logic.nlp_main import get_phrases
 
-def test_get_phrase():
-    assert "bryant" in get_phrases("Lakers") 
+def test_get_phrases():
+    phrases = get_phrases("Lakers")
+    assert "bryant" in phrases, f"Expected 'bryant' in phrases, but got: {phrases}"
