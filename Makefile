@@ -4,7 +4,7 @@ install:
 	python -m textblob.download_corpora
 
 test:
-	python -m pytest -vv --cov=wikiphrases --cov=hellocli test_nlp_main.py
+    python -m pytest --cov=. --cov-report=xml
 
 lint:
 	pylint --disable=R,C *.py nlp_logic/*.py
